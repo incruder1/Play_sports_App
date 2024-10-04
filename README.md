@@ -1,79 +1,95 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<h1 align="center">Playo App</h1>
 
-# Getting Started
+<h3 align="center">
+The Playo App using the MERN stack (MongoDB, Express, React, Node.js) that help sports enthusiast to connect and attend event.</h3>
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+<br />
 
-## Step 1: Start the Metro Server
+<h2 align="center">🖥️ Tech Stack</h2>
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+<h4 align="center">Frontend:</h4>
 
-```bash
-# using npm
-npm start
+ 
+![2](https://github.com/user-attachments/assets/b920f681-b5e7-4d84-827c-a1efce652247)
+ 
+<br />
 
-# OR using Yarn
-yarn start
-```
+![1](https://github.com/user-attachments/assets/6c5869d2-1b64-4930-a632-9c479a4dc951)
+<br />
 
-## Step 2: Start your Application
+## Screens ( All screens are responsive along with Dark Mode)
+- Homepage / Landing Page
+- User Login and Register Page
+- Event create Page
+- Requests received Page
+- Requests sent Page
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+<br />
 
-```bash
-# using npm
-npm run android
 
-# OR using Yarn
-yarn android
-```
+## 🚀 Features
+- Authentication: Users can sign up and log in to the platform, and their credentials are securely stored in a MongoDB database using encryption.
+- Event creation: Authenticated users can create events with a name, short description, timings, number of players limit etc.
+- Users can search or filter through listed events to find a suitable event for them.
+- Users can request to join the event if the player limit is not full.
+- Accepted users can see who all are joining the game.
+- Users can view the list of events they have been accepted to or have requested for.
+- All pending requests expire after the game starts.
+<br/>
 
-### For iOS
+## Technologies used
+- MongoDB: a NoSQL database used to store data in a JSON-like format.
+- Express: a Node.js framework used for building web applications.
+- React: a JavaScript library used for building user interfaces.
+- Node.js: a JavaScript runtime used for building server-side applications.
+- JWT: JSON Web Tokens used for user authentication.
+- bcrypt: a library used for password hashing and encryption.
 
-```bash
-# using npm
-npm run ios
+<br/>
 
-# OR using Yarn
-yarn ios
-```
+## Contributing
+If you find any bugs or would like to contribute to this project, please feel free to submit a pull request or open an issue.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+<br />
 
-Now that you have successfully run the app, let's modify it.
+## Glimpses of iBlog 🙈 :
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+ 
+<br />
 
-## Congratulations! :tada:
+### Tools used on this project
 
-You've successfully run and modified your React Native App. :partying_face:
+- Visual Studio Code
+- Vite-JS template
 
-### Now what?
+<br />
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+# REST API
 
-# Troubleshooting
+This repository contains a REST API built using NodeJS, ExpressJS and MongoDB. It follows the REST architecture principles and is designed to be scalable and maintainable.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## Getting Started
 
-# Learn More
+Deployed Link :- https://tough-ant-vestments.cyclic.app
 
-To learn more about React Native, take a look at the following resources:
+## API Endpoints
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+The following API endpoints are available:
+
+| Endpoint | Method | Description |
+| -------- | ------ | ----------- |
+| /users/login | POST | Login a user |
+| /users/register | POST | Create a new user |
+| /events | GET | Get all events |
+| /events/:id | GET | Get a single Event |
+| /events/send/:eventId | POST | Send a join request |
+| /events/accept/:requestId | POST | Accept a join request |
+| /events/recieved | GET | Get all recieved requests |
+| /events/sent | GET | Get all sent requests |
+
+ 
